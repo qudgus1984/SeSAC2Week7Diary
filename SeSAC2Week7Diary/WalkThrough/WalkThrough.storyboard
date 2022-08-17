@@ -72,11 +72,20 @@
                                     <constraint firstAttribute="height" constant="5" id="Ra9-AA-gdm"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tJ4-jg-fgg">
+                                <rect key="frame" x="336" y="54" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="1qt-4q-X7T"/>
+                                    <constraint firstAttribute="height" constant="68" id="p58-RK-Yhh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
                             <constraint firstItem="wx1-G0-1Hw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="QM0-Xm-mg1"/>
+                            <constraint firstItem="tJ4-jg-fgg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="cEd-LZ-b8H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tJ4-jg-fgg" secondAttribute="trailing" constant="10" id="eYa-wx-sqV"/>
                             <constraint firstItem="GkG-Y5-VB8" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="oRi-hj-RMQ"/>
                             <constraint firstItem="GkG-Y5-VB8" firstAttribute="top" secondItem="wx1-G0-1Hw" secondAttribute="bottom" constant="8" id="rbp-98-paS"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wx1-G0-1Hw" secondAttribute="trailing" constant="30" id="rdK-Dy-UsL"/>
@@ -84,6 +93,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationImageView" destination="tJ4-jg-fgg" id="K4l-x7-H3a"/>
                         <outlet property="blackView" destination="GkG-Y5-VB8" id="bBY-jy-foC"/>
                         <outlet property="tutorialLabel" destination="wx1-G0-1Hw" id="r2a-CS-JeU"/>
                     </connections>
