@@ -11,6 +11,8 @@
 		2FAB45E628AC822B00D8F84F /* CodeSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB45E528AC822B00D8F84F /* CodeSnapViewController.swift */; };
 		2FAB45F628AC8AB700D8F84F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FAB45F528AC8AB700D8F84F /* SnapKit */; };
 		2FAB45F828AC8C2200D8F84F /* CodeSnap2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB45F728AC8C2200D8F84F /* CodeSnap2ViewController.swift */; };
+		2FBE43E528ADDF1C002B1C52 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE43E428ADDF1C002B1C52 /* UIViewController+Extension.swift */; };
+		2FBE43E728ADE62B002B1C52 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBE43E628ADE62B002B1C52 /* ProfileViewController.swift */; };
 		2FD5705D28ACBADF001833A4 /* KakaotalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5705C28ACBADF001833A4 /* KakaotalkViewController.swift */; };
 		2FD81C7428AB1FC400582B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD81C7328AB1FC400582B31 /* AppDelegate.swift */; };
 		2FD81C7628AB1FC400582B31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD81C7528AB1FC400582B31 /* SceneDelegate.swift */; };
@@ -62,6 +64,8 @@
 		2FAB45E228AC71B000D8F84F /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		2FAB45E528AC822B00D8F84F /* CodeSnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnapViewController.swift; sourceTree = "<group>"; };
 		2FAB45F728AC8C2200D8F84F /* CodeSnap2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnap2ViewController.swift; sourceTree = "<group>"; };
+		2FBE43E428ADDF1C002B1C52 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2FBE43E628ADE62B002B1C52 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2FD5705C28ACBADF001833A4 /* KakaotalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaotalkViewController.swift; sourceTree = "<group>"; };
 		2FD81C7028AB1FC400582B31 /* SeSAC2Week7Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2Week7Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD81C7328AB1FC400582B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,14 @@
 			path = CodeBase;
 			sourceTree = "<group>";
 		};
+		2FBE43E128ADDEF7002B1C52 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2FBE43E428ADDF1C002B1C52 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		2FD5705928ACBAC0001833A4 /* KakaotalkCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +143,7 @@
 		2FD81C7228AB1FC400582B31 /* SeSAC2Week7Diary */ = {
 			isa = PBXGroup;
 			children = (
+				2FBE43E128ADDEF7002B1C52 /* Extension */,
 				2FD5705928ACBAC0001833A4 /* KakaotalkCode */,
 				2FAB45DF28AC718D00D8F84F /* CodeBase */,
 				2FD81CA628AB3A5300582B31 /* WalkThrough */,
@@ -141,6 +154,7 @@
 				2FD81C7C28AB1FC500582B31 /* Assets.xcassets */,
 				2FD81C7E28AB1FC500582B31 /* LaunchScreen.storyboard */,
 				2FD81C8128AB1FC500582B31 /* Info.plist */,
+				2FBE43E628ADE62B002B1C52 /* ProfileViewController.swift */,
 			);
 			path = SeSAC2Week7Diary;
 			sourceTree = "<group>";
@@ -275,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FBE43E528ADDF1C002B1C52 /* UIViewController+Extension.swift in Sources */,
 				2FD81C7828AB1FC400582B31 /* ViewController.swift in Sources */,
 				2FD81C7428AB1FC400582B31 /* AppDelegate.swift in Sources */,
 				2FAB45F828AC8C2200D8F84F /* CodeSnap2ViewController.swift in Sources */,
@@ -284,6 +299,7 @@
 				2FD81CB028AB40F000582B31 /* ThirdViewController.swift in Sources */,
 				2FAB45E328AC71B000D8F84F /* CodeViewController.swift in Sources */,
 				2FD81CB428AB419900582B31 /* WalkThroughViewController.swift in Sources */,
+				2FBE43E728ADE62B002B1C52 /* ProfileViewController.swift in Sources */,
 				2FD81CAC28AB3A9E00582B31 /* FirstViewController.swift in Sources */,
 				2FD5705D28ACBADF001833A4 /* KakaotalkViewController.swift in Sources */,
 			);

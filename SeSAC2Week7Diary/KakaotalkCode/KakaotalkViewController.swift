@@ -12,7 +12,7 @@ class KakaotalkViewController: UIViewController {
     
     let profileView: UIImageView = {
         let view = UIImageView()
-        view.layer.cornerRadius = 10
+        view.layer.cornerRadius = 20
         view.backgroundColor = .cyan
         
         return view
