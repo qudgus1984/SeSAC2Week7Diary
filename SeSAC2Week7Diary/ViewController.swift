@@ -17,25 +17,37 @@ class ViewController: UIViewController {
         view.backgroundColor = .black
         return view
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configure()
         
         nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(saveButtonNotificationObserver(notificaition:)), name: NSNotification.Name("saveButtonNotification"), object: nil)
+    }
+    
+    @objc func saveButtonNotificationObserver(notificaition: NSNotification) {
+        if let name = notificaition.userInfo?["name"] as? String {
+            print(name)
+            self.nameButton.setTitle(name, for: .normal)
+        }
     }
     
     @objc func nameButtonClicked() {
         
+        NotificationCenter.default.post(name: NSNotification.Name("TEST"), object: nil, userInfo: ["name": "\(Int.random(in: 1...100))" , "value": 123456])
+        
         let vc = ProfileViewController()
         
-        vc.saveButtonActionHandler = {
-            self.nameButton.setTitle(vc.nameTextField.text, for: .normal)
+        vc.saveButtonActionHandler = { name in
+            self.nameButton.setTitle(name, for: .normal)
         }
         
         present(vc, animated: true)
     }
+    
     func configure() {
         view.addSubview(nameButton)
         
@@ -45,6 +57,6 @@ class ViewController: UIViewController {
             
         }
     }
-
+    
 }
 
